@@ -1,4 +1,4 @@
-#os-independent read character in a loop without return and output ascii-value break on #
+#os-independent(windows and unixoid) read character in a loop without return and output ascii-value break on #
 class _Getch(object):
     def __init__(self):
         try:
