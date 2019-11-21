@@ -1,7 +1,5 @@
 #os-independent read character in a loop without return and output ascii-value break on #
 class _Getch(object):
-    """Gets a single character from standard input.  
-       Does not echo to the screen."""
     def __init__(self):
         try:
             self.impl = _GetchWindows()
@@ -25,7 +23,6 @@ class _GetchUnix(object):
         finally:
             termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
         return ch
-
 
 class _GetchWindows(object):
     def __init__(self):
