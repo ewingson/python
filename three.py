@@ -77,7 +77,7 @@ def main():
         char = foo.impl()
         wert = ord(char)
         choice = wert - 48
-        #print (char + " _ " + str(wert))
+        #print (str(char, "utf-8", "ignore") + " _ " + str(wert))
         bar = Switcher()
         output = bar.main_menu(choice)
         print (output)
