@@ -73,7 +73,7 @@ def main():
     print ("| 3 : menu point three     |")
     print ("| 4 : ende                 |")
     print ("----------------------------")
-    while (char != "4"):
+    while (ord(char) != 52):
         char = foo.impl()
         wert = ord(char)
         choice = wert - 48
