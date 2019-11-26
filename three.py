@@ -43,16 +43,26 @@ class Switcher(object):
         return method()
   
     def fall_1(self):
-        #emulate booting
+        #emulate slow progress
+        from time import sleep
+        import sys
+        i=0
+        for i in range (12):
+            sleep (0.5)
+            sys.stdout.write (".")
+            sys.stdout.flush()
+        print("")   
         return "January"
   
     def fall_2(self):
-        #read environment variables
+        #output Switcher dictionary
+        print (Switcher.__dict__)
         return "February"
   
     def fall_3(self):
-        #fire a query
-        return "March"
+        #return given string
+        query = input ("gimme a string: ")
+        return query
 
 def main():
     foo = _Getch()
