@@ -1,2 +1,2 @@
 # python
-building python helpers
+this is the current work directory for python / solid experiments
