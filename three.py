@@ -1,6 +1,5 @@
 """
 experiment with a main menu and switch / case construction
-
 """
 class _Getch(object):
     """read character from stdin without return"""
