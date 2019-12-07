@@ -2,7 +2,7 @@
 experiment with a main menu and switch / case construction
 """
 class _Getch(object):
-    """read character from stdin without return"""
+    """read character from stdin without return and split workflow into three tasks"""
     def __init__(self):
         try:
             self.impl = _GetchWindows()
