@@ -69,13 +69,13 @@ class Switcher(object):
 def main():
     foo = _Getch()
     char = "#"
-    print ("----------------------------")
-    print ("| 1 : menu point one       |")
-    print ("| 2 : menu point two       |")
-    print ("| 3 : menu point three     |")
-    print ("| 4 : ende                 |")
-    print ("----------------------------")
     while (ord(char) != 52):
+        print ("----------------------------")
+        print ("| 1 : menu point one       |")
+        print ("| 2 : menu point two       |")
+        print ("| 3 : menu point three     |")
+        print ("| 4 : ende                 |")
+        print ("----------------------------")
         char = foo.impl()
         wert = ord(char)
         choice = wert - 48
