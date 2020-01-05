@@ -2,7 +2,7 @@
 experiment with a main menu and switch / case construction
 """
 class _Getch(object):
-    """read character from stdin without return and split workflow into three tasks"""
+    """read character from stdin without return"""
     def __init__(self):
         try:
             self.impl = _GetchWindows()
@@ -37,7 +37,7 @@ class _GetchWindows(object):
 
 class Switcher(object):
     def main_menu(self, argument):
-        """dispatch method / main menu with switch case"""
+        """dispatch method / main menu with switch case / three tasks"""
         method_name = 'fall_' + str(argument)
         # Get the method from 'self'. Default to a lambda.
         method = getattr(self, method_name, lambda: "nothing to compute")
